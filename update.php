@@ -1,5 +1,5 @@
-add_action('admin_head', 'thai_check_notice');
-function thai_check_notice() {
+add_action('admin_head', 'group_check_notice');
+function group_check_notice() {
     echo '<style> div#flatsome-notice {display: none;}</style>';
 }
 add_filter( 'pre_set_site_transient_update_themes', 'wupdates_check_YL6Wd' );
